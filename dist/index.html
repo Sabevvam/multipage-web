@@ -17,7 +17,54 @@
 <body>
     <div class="page">
         <!-- Header -->
-        <header class="header">header</header>
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Main</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Articles</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Website creation</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Internet marketing</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Video Promotion</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">About me</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Advertising</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Profile</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Exit</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="/" method="post">
+                    <input type="text" class="search__input"  placeholder="search by blog">
+                </form>
+            </div>
+        </header>
 
         <!-- Sidebar -->
         <aside class="sidebar">
