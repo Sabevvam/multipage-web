@@ -710,14 +710,17 @@ body {
     border-radius: 5px;
 }
 
-.add-post__form-actions {
+.add-post__form {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .add-post__textarea {
     display: block;
-    width: 70%;
+    width: 80%;
+    height: 26px;
     border: none;
     background: transparent;
     resize: none;
@@ -742,6 +745,14 @@ body {
     color: #D2D2D2;
 }
 
+.add-post__form-actions {
+    width: 20%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
 .add-post-file,
 .add-post-send {
     display: block;
@@ -750,6 +761,7 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
 .add-post-file {
@@ -766,4 +778,9 @@ body {
 
 .add-post-send {
     background-color: #3137C9;
+    margin-left: 1.5rem;
+}
+
+.add-post-send:hover {
+    background-color: #2c31b4;
 }
