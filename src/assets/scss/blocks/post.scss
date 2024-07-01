@@ -36,11 +36,6 @@
 
     a {
         color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
     &--mb0 {
@@ -54,8 +49,11 @@
 }
 
 .post__text {
+    padding-bottom: 1rem;
     font-size: 1.4rem;
     color: $white;
+
+    border-bottom: 1px solid #1C1C1C;
 
     h2, h3, h4, h5, h6 {
         margin-bottom: 2rem;
@@ -83,12 +81,27 @@
     }
 
     ol {
-        list-style: decimal;
+        list-style: decimal; 
         list-style-position: inside;
     }
 
     p {
         margin-bottom: 2rem;
+    }
+
+    a {
+        color: $blue;
+    }
+
+    table {
+        margin-bottom: 2rem;
+         width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -105,11 +118,6 @@
 
     a {
         color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 }
 
@@ -132,11 +140,6 @@
 .post__read {
     color: #107EFF;
     font-size: 1.4rem;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 .post__actions {
@@ -149,13 +152,11 @@
 
     a {
         color: inherit;
-        text-decoration:  none;
         transition: opacity .2s linear;
 
         opacity: 0.6;
 
         &:hover {
-            text-decoration: underline;
             opacity: 1;
         }
     }
