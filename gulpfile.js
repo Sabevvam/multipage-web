@@ -182,11 +182,8 @@ function jsWatch(cb) {
     cb();
 }
 
-const imagemin = require('gulp-imagemin');
-
 function images(cb) {
-    return src(path.src.images, {base: srcPath + 'assets/images/'})
-        .pipe(imagemin())
+    return src(path.src.images)
         .pipe(dest(path.build.images))
         .pipe(browserSync.reload({stream: true}));
 

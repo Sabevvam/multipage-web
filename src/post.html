@@ -42,7 +42,7 @@ title: Personal Blog | Post
             </p>
         </div> <!-- / .post__text-->
         <div class="related">
-            <h3 class="related__title">
+            <h3 class="post__subtitle">
                 Interesting to read
             </h3>
 
@@ -74,15 +74,53 @@ title: Personal Blog | Post
             </ul>
         </div> <!-- / .related-->
 
-        <div class="comments">
-            <h3 class="comments__title">Discussion</h3>
 
-            <form action="/" method="post" class="form">
-                <div class="form__group">
-                    <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Comment text"></textarea>
+        <h3 class="post__subtitle">Discussion</h3>
+
+        <form action="/" method="post" class="form">
+            <div class="form__group">
+                <textarea class="form__control form__control--textarea" name="comment__text" placeholder="Comment text"></textarea>
+                <span class="form__line"></span>
+            </div>
+            <button class="btn btn--blue btn--rounded btn--sm" type="submit">Send</button>
+        </form>
+
+        <ul class="comments">
+            <li class="comments__item">
+                <div class="comments__header">
+                    <img class="comments__avatar" src="https://placehold.co/30" alt="">
+        
+                    <div class="comments__author">
+                        <div class="comments__name">Dmitry Valak</div>
+                        <time class="comments__pubdate" datetime="2021-02-13 19:21">1 week ago</time>
+                    </div>
                 </div>
-                <button class="btn btn--blue btn--rounded" type="submit">Send</button>
-            </form>
-        </div>
+        
+                <div class="comments__text">
+                    Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                </div>
+                <button class="comments__reply" type="button">reply</button>
+        
+                <ul class="comments">
+                    <li class="comments__item">
+                        <div class="comments__header">
+                            <img class="comments__avatar" src="https://placehold.co/30" alt="">
+        
+                            <div class="comments__author">
+                                <div class="comments__name">Dmitry Valak</div>
+                                <time class="comments__pubdate" datetime="2021-02-13 19:21">1 week ago</time>
+                            </div>
+                        </div>
+        
+                        <div class="comments__text">
+                            Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                        </div>
+                        <button class="comments__reply" type="button">reply</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+
     </div> <!-- / .content-->
 </article> <!-- / .post-->

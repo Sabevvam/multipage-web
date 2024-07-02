@@ -1,5 +1,6 @@
 .form__group {
     margin-bottom: 1.5rem;
+    position:  relative;
 }
 
 .form__control {
@@ -21,9 +22,27 @@
         color: rgba($white, .2);
     }
 
+    &:focus + .form__line {
+        width: 100%;
+    }
+
     &--textarea {
         height: 30px;
         resize: none;
         overflow: hidden;
     }
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+
+    background-color: $blue;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    transition: width .2s linear;
 }
