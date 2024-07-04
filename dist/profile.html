@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Personal Blog | Works</title>
+    <title>Personal Blog | Profile</title>
 </head>
 <body>
     <div class="page">
@@ -112,56 +112,46 @@
         <main class="main">
             <div class="container">
                 
+                <h1 class="page__title">Profile</h1>
                 
-                <h1 class="page__title">My works</h1>
                 
-                <article class="work">
-                    <div class="work__preview">
-                        <img src="assets/images/work 1.jpg" alt="work">
-                    </div>
-                    <div class="work__content"> 
-                        <h2 class="work__title">
-                            <a href="#" target="_blank">altermono.com</a>
-                        </h2>
-                        <div class="work__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                <form action="/" class="form" method="post">
+                    <div class="cabinet">
+                        <div class="cabinet__form">
+                            <div class="form__group form__group--md">
+                                <input type="text" class="form__control" placeholder="Name" value="Stella Victoria">
+                                <span class="form__line"></span>
+                            </div>
+                        
+                            <div class="form__group form__group--md">
+                                <input type="email" class="form__control" placeholder="Email" value="test@mail.com">
+                                <span class="form__line"></span>
+                            </div>
+                        
+                            <div class="form__group form__group--md">
+                                <input type="password" class="form__control" placeholder="New password">
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group form__group--md">
+                                <input type="password" class="form__control" placeholder="Confirm password">
+                                <span class="form__line"></span>
+                            </div>
                         </div>
                 
-                        <ul class="tags">
-                            <li class="tags__item">design</li>
-                            <li class="tags__item">site development</li>
-                            <li class="tags__item">SMM</li>
-                        </ul>
+                        <div class="cabinet__avatar">
+                            <img src="https://placehold.co/150" alt="avatar">
                 
-                        <div class="work__footer">
-                            <a href="#" class="btn btn--blue btn--rounded btn--sm" target="_blank">Go to Website</a>
+                            <label class="cabinet__file">
+                                <input type="file">
+                                select avatar
+                            </label>
                         </div>
+                    </div> 
+                    
+                    <div class="form__footer">
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Save</button>
                     </div>
-                </article>
-                
-                <article class="work">
-                    <div class="work__preview">
-                        <img src="assets/images/work 2.jpg" alt="work">
-                    </div>
-                    <div class="work__content"> 
-                        <h2 class="work__title">
-                            <a href="#" target="_blank">altermono.com</a>
-                        </h2>
-                        <div class="work__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
-                        </div>
-                
-                        <ul class="tags">
-                            <li class="tags__item">design</li>
-                            <li class="tags__item">site development</li>
-                            <li class="tags__item">SMM</li>
-                        </ul>
-                
-                        <div class="work__footer">
-                            <a href="#" class="btn btn--blue btn--rounded btn--sm" target="_blank">Go to Website</a>
-                        </div>
-                    </div>
-                </article>
+                </form>
             </div>
         </main>
     </div>
