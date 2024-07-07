@@ -14,7 +14,7 @@
     
     <title>Personal Blog | Sign in</title>
 </head>
-<body class="no-scroll">
+<body class="show-sidebar">
     <div class="page">
         <!-- Header -->
         <header class="header">
@@ -47,6 +47,10 @@
                         </li>
                     </ul>
                 </nav>
+        
+                <button class="burger" type="button">
+                    <span>Open nav</span>
+                </button>
             </div>
         
             <div class="header__right">
@@ -71,12 +75,32 @@
             <div class="sidebar__header">
                 <img src="assets/images/sidebar-header.jpg" alt="sidebar header">
             </div>
+            
             <div class="sidebar__content">
                 <div class="profile">
-                    <img class="profile__avatar"
-                    src="https://placehold.co/100" alt="">
-                    <div class="profile__name">Your Name</div>
-                    <div class="profile__prof">Your profession</div>
+                    <img class="profile__avatar" src="https://placehold.co/100" alt="">
+        
+                    <div class="profile__header">
+                        <div class="profile__name">Your Name</div>
+                        <div class="profile__prof">Your profession</div>
+                    </div>
+        
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li>
+                                <a href="#">Main</a>
+                            </li>
+                            <li>
+                                <a href="#">Articles</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                            <li>
+                                <a href="#">Advertising</a>
+                            </li>
+                        </ul>
+                    </nav>
         
                     <ul class="social">
                         <li class="social__item">

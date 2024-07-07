@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 @import 'vendor/reset';
 
 html {
@@ -34,6 +35,7 @@ a {
 /* Blocks */
 @import 'blocks/page';
 @import 'blocks/header';
+@import 'blocks/burger';
 @import 'blocks/nav';
 @import 'blocks/subnav';
 @import 'blocks/search';

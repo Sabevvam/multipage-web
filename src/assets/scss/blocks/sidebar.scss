@@ -9,10 +9,21 @@
     top: 0;
     left: 0;
     z-index: $z-index-sidebar;
+
+    @include breakpoint ($tablet-bp) {
+        top: 4rem;
+        height: calc(100vh - 4rem);
+        transform: translateX(-100%);
+        transition: transform .2s linear;
+        
+        .show-sidebar & {
+            transform: translateX(0);
+        }
+    }
 }
 
 .sidebar__header {
-    height: 180px;
+    height: 18rem;  
     background-color: $secondary;
 
     img {
@@ -21,11 +32,14 @@
         height: 100%;
         object-fit: cover;
     }
+
+    @include breakpoint ($tablet-bp) {
+        height: 10rem;
+    }
 }
 
 .sidebar__content {
     padding: 0 2rem;
-    margin-top: -5rem;
 }
 
 .sidebar__footer {
