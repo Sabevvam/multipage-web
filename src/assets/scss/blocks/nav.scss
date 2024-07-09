@@ -1,10 +1,16 @@
 .nav {
-    @include breakpoint ($tablet-bp) {
-        display: none;
-    }
-
+    
     &--mobile {
-        display: block;
+        display: none;
+        margin: 3rem 0;
+    }
+    
+    @include breakpoint($tablet-bp) {
+        display: none;
+        
+        &--mobile {
+            display: block;
+        }
     }
 }
 
@@ -40,7 +46,7 @@
 }
 
 .nav__link {
-    display: block;
+    display: block; // <-- hmmm
     padding: 1.35rem;
 
     line-height: 1.2;
