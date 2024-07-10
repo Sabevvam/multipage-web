@@ -52,6 +52,10 @@
     a {
         color: inherit;
     }
+
+    @include breakpoint ($mobile-bp) {
+        margin-bottom: 2rem;
+    }
 }
 
 .work__description {
@@ -61,6 +65,12 @@
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.68;
+
+    @include breakpoint ($mobile-bp) {
+        margin-bottom: 2rem;
+
+        font-size: 1.4rem;
+    }
 }
 
 .work__footer {

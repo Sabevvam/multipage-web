@@ -1473,6 +1473,11 @@ a:hover {
 .work__title a {
   color: inherit;
 }
+@media (max-width: 575px) {
+  .work__title {
+    margin-bottom: 2rem;
+  }
+}
 
 .work__description {
   margin-bottom: 3rem;
@@ -1480,6 +1485,12 @@ a:hover {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.68;
+}
+@media (max-width: 575px) {
+  .work__description {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
 }
 
 .work__footer {
