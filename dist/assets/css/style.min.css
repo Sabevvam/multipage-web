@@ -941,14 +941,14 @@ a:hover {
 
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__textarea {
   display: block;
   flex-grow: 1;
   width: 80%;
-  height: 26px;
+  height: 34px;
   overflow: hidden;
   border: none;
   background: transparent;
@@ -1395,7 +1395,7 @@ a:hover {
   width: 100%;
 }
 .form__control--textarea {
-  height: 30px;
+  height: 32px;
   resize: none;
   overflow: hidden;
 }
